@@ -8,4 +8,4 @@ Build a MERN React Admin Expense tracker | Redux Toolkit Query, Backend Focus, D
 <strong>Deployment</strong>
 <strong>Data Modeling</strong>
 
-Link: https://expense-tracker-frontend-5w2e.onrender.com
+Link: https://expense-tracker-frontend-lsr5.onrender.com
