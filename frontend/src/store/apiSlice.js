@@ -5,21 +5,21 @@ export const apiSlice = createApi({
     endpoints: builder => ({
         getCategories: builder.query({
             query: () => ({
-                url: '/api/categories/findAll',
+                url: '/categories/findAll',
                 method: 'get'
             }),
             providesTags: ['categories']
         }),
         getLabels: builder.query({
             query: () => ({
-                url: '/api/labels',
+                url: '/labels',
                 method: 'get'
             }),
             providesTags: ['transaction']
         }),
         addTransaction: builder.mutation({
             query: (initialTransaction) => ({
-                url: '/api/transaction/create',
+                url: '/transaction/create',
                 method: 'post',
                 body: initialTransaction
             }),
@@ -27,7 +27,7 @@ export const apiSlice = createApi({
         }),
         deleteTransaction: builder.mutation({
             query: (id) => ({
-                url: '/api/transaction/deleteById',
+                url: '/transaction/deleteById',
                 method: 'delete',
                 body: id
             }),
